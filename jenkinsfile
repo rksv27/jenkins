@@ -1,0 +1,19 @@
+pipeline{
+    agent any 
+        stages{ 
+            stage ("Hello") {
+                
+            
+            steps{
+                echo ("Welcome everyone")
+            }
+            stage ("Build"){
+            Steps {
+            echo ("Build stage")}
+            }
+            Steps {
+            echo ("test")
+            }
+       }
+    }
+}
